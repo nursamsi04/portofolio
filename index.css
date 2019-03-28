@@ -1,0 +1,273 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+/* box judul */
+.header {
+    position: relative;
+    width: 700px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-bottom: 10px;
+}
+
+.header .box {
+    box-sizing: border-box;
+    position: relative;
+    /* text-align: center;
+    border: 1px solid black;
+    width: 30px;
+    float: left; */
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header .box:hover:nth-child(1) {
+    background: #f54957;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(2) {
+    background: lightgreen;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(3) {
+    background: lightseagreen;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(4) {
+    background: yellowgreen;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(5) {
+    background: blue;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(6) {
+    background: blueviolet;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(7) {
+    background: burlywood;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(8) {
+    background: salmon;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(9) {
+    background: yellowgreen;
+    color: #fff;
+}
+
+.header .box:hover:nth-child(10) {
+    background: turquoise;
+    color: #fff;
+}
+
+h5 {
+    margin-left: 1px;
+}
+
+.box {
+    position: relative;
+    height: 100%;
+    width: 30px;
+    border: 1px solid #000;
+    float: left;
+    margin: 5px;
+    /* font-size: 20px; */
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 80px;
+    margin-left: 200px;
+    position: absolute;
+    background: #000;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, .5);
+    display: flex;
+}
+
+ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    /* background: url(hujan.jpg);
+    background-size: cover;
+    background-position: left; */
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 3px solid white;
+    float: left;
+    box-sizing: border-box;
+    transition: 0.5;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+ul li:nth-child(1) {
+    background: url(shutterstock_459867970.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+ul li:nth-child(2) {
+    background: url(learn-coding-online-for-free.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+ul li:nth-child(3) {
+    background: url(what-is-a-web-developer.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+ul li:nth-child(4) {
+    background: url(4.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+ul li:nth-child(5) {
+    background: url(about.jpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+ul:hover li {
+    width: 10%;
+}
+
+ul li:hover {
+
+    width: 60%;
+}
+
+ul li .content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    color: #fff;
+    opacity: 0;
+    height: 400px;
+}
+
+ul li:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    opacity: 1;
+
+}
+
+/* conten */
+#box {
+    margin-left: 33%;
+}
+
+#box .box {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    float: left;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-top: 200px;
+    background: lightgreen;
+    overflow: hidden;
+}
+
+.icon {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.box:hover .icon {
+    top: 3px;
+    left: calc(50% - 40%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 20%;
+}
+
+.box .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    transition: 0.5s;
+    color: white;
+}
+
+.box:hover .icon .fa {
+    font-size: 10px;
+}
+
+#box .box:nth-child(1) .icon {
+    background: #319635;
+}
+
+#box .box:nth-child(1) {
+    background: #4caf50;
+}
+
+#box .box:nth-child(2) .icon {
+    background: salmon;
+}
+
+#box .box:nth-child(2) {
+    background: #f54957;
+}
+
+#box .box:nth-child(3) .icon {
+    background: #23798e;
+}
+
+#box .box:nth-child(3) {
+    background: #328fa5;
+}
